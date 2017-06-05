@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
             }
           
         }
-        if (Input.GetButtonDown("Slide") && ground == true)
+        if (Input.GetButtonDown("Slide") && ground == true && slide == false)
         {
             colisor.position = new Vector3(colisor.position.x, colisor.position.y - 0.355f);
             slide = true;
@@ -85,7 +85,11 @@ public class PlayerController : MonoBehaviour {
             
 
         }
-        
+
+        if (col.tag == "barreira")
+        {
+            Application.LoadLevel("menu");
+        }
     }
 }
 
