@@ -8,6 +8,8 @@ public class SpawnController : MonoBehaviour {
     public float currentTime;
     private int posicao;
     private float y; 
+	public List<Sprite> list;
+
 
     // Use this for initialization
     void Start () {
@@ -21,6 +23,8 @@ public class SpawnController : MonoBehaviour {
         {
             currentTime = 0;
             posicao = Random.Range(1,100);
+
+
             if (posicao > 50)
             {
                 y = -0.743f;
@@ -33,6 +37,9 @@ public class SpawnController : MonoBehaviour {
             Debug.Log(posicao);
             GameObject tempPrefab = Instantiate(barreiraPrefab) as GameObject;
             tempPrefab.transform.position = new Vector3(transform.position.x,y,tempPrefab.transform.position.z);
+
+			if(tempPrefab.CompareTag("presente"))
+				tempPrefab.GetComponent<SpriteRenderer> ().sprite = list [Random.Range (0, list.Count - 1)];
         }
 	}
 }

@@ -27,3 +27,5 @@ C:\Users\aluno\Unity\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\aluno\Unity\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\aluno\Unity\obj\Debug\Assembly-CSharp.dll
 C:\Users\aluno\Unity\obj\Debug\Assembly-CSharp.pdb
+C:\Users\aluno\Desktop\unity\unity2\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\unity\unity2\obj\Debug\Assembly-CSharp.dll

@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour {
 
         if (col.tag == "barreira")
         {
-            Application.LoadLevel("menu");
+            Application.LoadLevel("gameover");
         }
     }
 }
